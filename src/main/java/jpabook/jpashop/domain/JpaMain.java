@@ -17,14 +17,15 @@ public class JpaMain {
 
         try{
 
-            Team team = new Team();
-            team.setName("TeamA");
-            em.persist(team);
+            Order order = new Order();
+            em.persist(order);
+//            order.addOrderItem(new OrderItem());
 
-            Member member = new Member();
-            member.setUsername("member1");
-            member.setTeamId(team.getId());
-            em.persist(member);
+            OrderItem orderItem = new OrderItem();
+            orderItem.setOrder(order);
+
+            em.persist(orderItem);
+
 
 
 
