@@ -12,6 +12,7 @@ public class Address {
     private String street;
     private String zipcode;
 
+
     public String fullAddress() {
         return getCity() + " " + getStreet() + " " + getZipcode();
     }
