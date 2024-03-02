@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Album extends Item{
+    // extends Item으로 상속받음
 
     private String artist;
     private String etc;
