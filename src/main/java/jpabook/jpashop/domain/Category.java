@@ -9,7 +9,7 @@ import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
 public class Category extends BaseEntity{
-
+ //BaseEntity 상속받음
     @Id
     @GeneratedValue
     private Long id;
