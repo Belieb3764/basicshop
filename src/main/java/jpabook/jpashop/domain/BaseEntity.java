@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 
 public class BaseEntity {
 // 공통적으로 자주쓰이는 구문을 따로뺴서 entity로 만들어서 상속함
+    //extends 클래스명
     @Column(name = "ISERT_MEMBER")
     private String createdBy;
     private LocalDate createdDate;
